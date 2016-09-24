@@ -19,3 +19,6 @@ RUN apt-get -y -q install mininet \
     && service openvswitch-controller stop \
     && update-rc.d openvswitch-controller disable \
     && service openvswitch-switch start
+
+VOLUME /var/python
+WORKDIR /var/python
